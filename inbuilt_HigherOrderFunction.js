@@ -142,3 +142,48 @@ data.sort((a,b)=> b-a) // sorted the data in descending order (b-a)
 console.log(data)
 
 
+
+
+
+//another example
+
+let personInfo = [
+    {
+       name : "John",
+       age : 23,
+       gender : "male",
+    },
+    {
+        name : "Mary",
+        age : 24,
+        gender : "female",
+    },
+    {
+        name : "Peter",
+        age : 25,
+        gender : "male",
+    },
+    {
+        name : "Sara",
+        age : 26,
+        gender : "female",
+    }
+]
+
+personInfo.sort((a,b)=>a.age -b.age); // here a and b are the objects
+console.log(personInfo);
+
+
+
+
+// Working mechanism of sort() function
+
+let list = [1,2,3,4,5,6,7,8,9];
+
+function Sort(a,b){
+    return b.toString().localeCompare(a.toString());
+}
+
+list.sort(Sort);
+
+console.log(list);
